@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "reciepe-book-angular": {
+    "recipe-book-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/reciepe-book-angular",
+            "outputPath": "dist/recipe-book-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "reciepe-book-angular:build:production"
+              "browserTarget": "recipe-book-angular:build:production"
             },
             "development": {
-              "browserTarget": "reciepe-book-angular:build:development"
+              "browserTarget": "recipe-book-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reciepe-book-angular:build"
+            "browserTarget": "recipe-book-angular:build"
           }
         },
         "test": {
