@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingListEditComponent } from './shopping_list/shopping-list-edit/shopping-list-edit.component';
-import { RecipeItemComponent } from './recipe_book/recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './recipe_book/recipe-detail/recipe-detail.component';
-import { RecipeListComponent } from './recipe_book/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { HeaderComponent } from './header/header.component';
-import {ShoppingListComponent} from "./shopping_list/shopping-list/shopping-list.component";
+import {ShoppingListComponent} from "./shopping_list/shopping-list.component";
+import {recipeBook} from "./recipes/recipe-book.component";
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 
 
 @NgModule({
@@ -16,10 +17,11 @@ import {ShoppingListComponent} from "./shopping_list/shopping-list/shopping-list
     AppComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    RecipeItemComponent,
     RecipeDetailComponent,
     RecipeListComponent,
-    HeaderComponent
+    HeaderComponent,
+    recipeBook,
+    RecipeItemComponent
   ],
   imports: [
     BrowserModule,
