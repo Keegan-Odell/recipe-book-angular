@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import {ShoppingListComponent} from "./shopping_list/shopping-list.component";
 import {recipeBook} from "./recipes/recipe-book.component";
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import {NgOptimizedImage} from "@angular/common";
 
 
 @NgModule({
@@ -23,10 +24,11 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
     recipeBook,
     RecipeItemComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
